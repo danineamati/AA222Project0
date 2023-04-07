@@ -5,7 +5,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name=proj0_fs
 
-date
+error log
+pwd; hostname; date
 
 module load julia/1.8.0
 julia ./localtest.jl
