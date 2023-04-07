@@ -4,8 +4,12 @@
 #SBATCH --time=0-00:10:00
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name=proj0_fs
-#SBATCH --output=./slurm_reports/slurm-%j.out
-#SBATCH --error=./slurm_reports/slurm-%j.err
+#SBATCH --output=home/dneamati/GitHub/AA222Project0/slurm_reports/slurm-%j-%x.out
+#SBATCH --error=home/dneamati/GitHub/AA222Project0/slurm_reports/slurm-%j-%x.err
+
+date
 
 module load julia/1.8.0
 julia ./localtest.jl
+
+date
